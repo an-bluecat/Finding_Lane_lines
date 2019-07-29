@@ -43,7 +43,8 @@ the triangle size is:
 
 ## 2.Shortcomings and future improvement
 ### (1). The green line disappears periodically in the output video.
-  This is because in a frame like below, the right side lane less clear
+  This is because in a frame like below, the right side lane less clear comparing the first frame I showed in this README.
+  The first right white line we can se is farther way from the camera.
   ![Screen Shot 2019-07-29 at 10 59 33 AM](https://user-images.githubusercontent.com/45247795/62019134-1723cb80-b1f0-11e9-913d-ba84865875f3.png)
 
   As we can see from step 4, edge detection has destinguished the edge. So the algorithm for Hough and calculating lines    should be improved.
