@@ -42,17 +42,19 @@ the triangle size is:
 
 
 ## 2.Shortcomings and future improvement
-1. The green line disappears periodically in the output video.
+### (1). The green line disappears periodically in the output video.
   This is because in a frame like below, the right side lane less clear
   ![Screen Shot 2019-07-29 at 10 59 33 AM](https://user-images.githubusercontent.com/45247795/62019134-1723cb80-b1f0-11e9-913d-ba84865875f3.png)
 
   As we can see from step 4, edge detection has destinguished the edge. So the algorithm for Hough and calculating lines    should be improved.
   
-2. This model assumes road being straight
+### (2). This model assumes road being straight
   If the road bends, the triangle in this model will no longer be able to detect appropriate lane area.
   To imporve this, it needs to be broaden, maybe with a trapazoid
   If the road bends, the triangle in this model will no longer be able to detect appropriate lane area.
 
+## 3.Output Video
+### go to folder "test_videos_output"
 
 
 
