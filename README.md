@@ -46,13 +46,19 @@ the triangle size is:
   This is because in a frame like below, the right side lane less clear comparing the first frame I showed in this README.
   The first right white line we can se is farther way from the camera.
   ![Screen Shot 2019-07-29 at 10 59 33 AM](https://user-images.githubusercontent.com/45247795/62019134-1723cb80-b1f0-11e9-913d-ba84865875f3.png)
-
-  As we can see from step 4, edge detection has destinguished the edge. So the algorithm for Hough and calculating lines    should be improved.
+  while in a frame like below, where the first right side line is closer to the camera, then the straight line is longer and easier to detect on the picture
+   ![Hough](https://user-images.githubusercontent.com/45247795/62018179-3587c800-b1ec-11e9-805b-76e9c180133d.jpg)
+  improvements:
+  As we can see from step 4, edge detection has destinguished the edge. So the algorithm for Hough and calculating lines should be improved.
+  Also, I could extends the line detected from last frame and carry over to make the video look more smooth.
   
 ### (2). This model assumes road being straight
-  If the road bends, the triangle in this model will no longer be able to detect appropriate lane area.
+  - If the road bends, the triangle in this model will no longer be able to detect appropriate lane area.
   To imporve this, it needs to be broaden, maybe with a trapazoid
-  If the road bends, the triangle in this model will no longer be able to detect appropriate lane area.
+  - if the road bends at a large angle, then it won't be detected as a straight line by Hough
+  
+### (3) Houghline not detecting best result
+Hough Transform is tricky to get right with its parameters. I am not sure I got the best settings.
 
 ## 3.Output Video
 ### go to folder "test_videos_output"
